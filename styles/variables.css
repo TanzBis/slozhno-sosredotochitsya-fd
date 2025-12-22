@@ -6,11 +6,16 @@
   --button-bg-color: transparent; /* фон кнопки */
   --h1-color: #db00ff; /* цвет заголовка h1*/
   --h2-color: #000028; /* цвет заголовка h2 */
-  
+  --content-txt-color: #f1b2ce; /* цвет текста в главной секции */
+
   /* Шрифты */
   --main-font: 'IBM Plex Mono', sans-serif; /* основной шрифт */
   --h1-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* размер шрифта h1 */
   --h1-lh: 83%; /* line-heght у h1 */
+  --h2-size: 18px; /* размер шрифта у h2 */
+  --h3-size: 18px; /* размер шрифта у h3 */
+  --h3-lh: 23.4px; /* line-height у h3 */
+  --content-txt-lh: 23.4px; /* line-height у текста главной секции */
   --main-text-size: 18px; /* размер шрифта основного текста */
   --weight-bold: bold; /* жирность шрифта */
   --weight-regular: 400; /* жирность шрифта regular */
