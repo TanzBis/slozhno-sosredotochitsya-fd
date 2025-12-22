@@ -6,4 +6,154 @@
   background-position: center;
   background-attachment: fixed;
   background-color: var(--bg-color);
+  margin: 0;
+}
+
+/* Мобилка темная тема */
+
+/* header */
+.header {
+display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  justify-items: end;
+  align-items: center;
+  min-height: 668px;
+  height: 100vh;
+  padding: 10px;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: '';
+  top: 10px;
+  right: 10px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--accent-color);
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: '';
+  bottom: 10px;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--accent-color);
+  border-top: 0;
+  border-right: 0;
+}
+
+/* декоративный элемент REC */
+.header__rec {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: var(--main-font);
+  font-size: var(--main-text-size);
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.header__rec::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+
+/* переключение тем */
+.header__theme-menu {
+  grid-column: 2/3;
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  list-style: none;
+
+}
+
+.header__theme-menu-button {
+  font-family: var(--main-font);
+  font-size: var(--main-text-size);
+  text-transform: lowercase;
+  padding: 0 13px;
+  height: 26px;
+  background-color: var(--button-bg-color);
+  color: var(--accent-color);
+  border: none;
+}
+
+/* Стили кнопки при нажатии  */
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+}
+
+/* Стили для текста шапки */
+.header__title {
+  grid-column: 1/3;
+  color: var(--h1-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: var(--h1-size);
+  font-family: var(--main-font);
+  line-height: var(--h1-lh);
+  margin: 0;
+}
+
+/* Параграф шапки */
+.header__paragraph {
+  grid-column: 1/3;
+  align-self: center;
+  width: 355px;
+  line-height: 130%;
+  height: 117px;
+  font-family: var(--main-font);
+  font-weight: var(--weight-bold);
+  font-size: var(--main-text-size);
+}
+
+.header__paragraph-item {
+  margin: 0;
+}
+
+/* Декорация всех заголовков */
+.title-decor {
+  color: var(--h2-color);
+  background-color: var(--accent-color);
+}
+
+/* Основная секция */
+.content {
+  padding: 0 10px;
+}
+
+.content__cards-list {
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 0
+}
+
+.content__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+}
+
+.content__text {
+  color: #F1B2CE;
 }

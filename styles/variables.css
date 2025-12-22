@@ -1,9 +1,23 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
-  --bg-image: url(../images/cover-image-dark.png); /* для фоновой картинки */
-  --bg-color: #000028;
+  /* Цвета */
+  --bg-image: url(../images/cover-image-dark.png); /* фоновая картинки */
+  --bg-color: #000028; /* цвет фона */
+  --accent-color: #ff0070; /* акцентный цвет */
+  --button-bg-color: transparent; /* фон кнопки */
+  --h1-color: #db00ff; /* цвет заголовка h1*/
+  --h2-color: #000028; /* цвет заголовка h2 */
+  
+  /* Шрифты */
+  --main-font: 'IBM Plex Mono', sans-serif; /* основной шрифт */
+  --h1-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* размер шрифта h1 */
+  --h1-lh: 83%; /* line-heght у h1 */
+  --main-text-size: 18px; /* размер шрифта основного текста */
+  --weight-bold: bold; /* жирность шрифта */
+  --weight-regular: 400; /* жирность шрифта regular */
+
+  /* Отступы */
+  --page-padding: 10px; /* отступы страницы */
+
+  /* Логические свойства и функции */
+  --page-padding: 10px; /* отступы страницы */
 }
