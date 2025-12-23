@@ -12,6 +12,7 @@
   --main-font: 'IBM Plex Mono', sans-serif; /* основной шрифт */
   --h1-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* размер шрифта h1 */
   --h1-lh: 83%; /* line-heght у h1 */
+  --h1-size-desctop: 157px; /* размер шрифта у h1 для декстопа */
   --h2-size: 18px; /* размер шрифта у h2 */
   --h3-size: 18px; /* размер шрифта у h3 */
   --h3-lh: 23.4px; /* line-height у h3 */
