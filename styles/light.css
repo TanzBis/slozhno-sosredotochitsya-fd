@@ -5,8 +5,28 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image: url(../images/cover-image-light.png); /* фоновая картинки */
+  --bg-color: #FFF1F7; /* цвет фона */
+  --accent-color: #FF8DCB; /* акцентный цвет */
+  --subtitle-color: #353430; /* цвет для заголовка главной */
+  --button-hover-color: rgba(50, 49, 45, 0.4); /* цвет границы кнопки при наведении */
+  --h1-color: #FFC2E6; /* цвет заголовка h1*/
+  --footer-shawod-color: #FF0070; /* цвет тени футера*/
+  --h2-color: #353430; /* цвет заголовка h2 */
+  --content-txt-color: #353430; /* цвет текста в главной секции */
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --bg-image: url(../images/cover-image-light.png); /* фоновая картинки */
+  --bg-color: #FFF1F7; /* цвет фона */
+  --accent-color: #FF8DCB; /* акцентный цвет */
+  --subtitle-color: #353430; /* цвет для заголовка главной */
+  --button-hover-color: rgba(50, 49, 45, 0.4); /* цвет границы кнопки при наведении */
+  --h1-color: #FFC2E6; /* цвет заголовка h1*/
+  --footer-shawod-color: #FF0070; /* цвет тени футера*/
+  --h2-color: #353430; /* цвет заголовка h2 */
+  --content-txt-color: #353430; /* цвет текста в главной секции */
+  }
+
+} 
