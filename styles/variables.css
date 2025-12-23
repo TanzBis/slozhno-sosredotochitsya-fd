@@ -15,8 +15,8 @@
   --h2-size: 18px; /* размер шрифта у h2 */
   --h3-size: 18px; /* размер шрифта у h3 */
   --h3-lh: 23.4px; /* line-height у h3 */
-  --content-txt-lh: 23.4px; /* line-height у текста главной секции */
-  --main-text-size: 18px; /* размер шрифта основного текста */
+  --text-lh: 23.4px; /* базовый line-height у текстовых элементов */
+  --text-size: 18px; /* размер шрифта основного текста */
   --weight-bold: bold; /* жирность шрифта */
   --weight-regular: 400; /* жирность шрифта regular */
 

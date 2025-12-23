@@ -2,10 +2,14 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background-image: var(--bg-image);
   background-position: center;
   background-attachment: fixed;
   background-color: var(--bg-color);
+  font-size: var(--text-size);
   margin: 0;
 }
 
@@ -59,7 +63,7 @@
   gap: 10px;
   align-items: center;
   font-family: var(--main-font);
-  font-size: var(--main-text-size);
+  font-size: var(--text-size);
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -73,7 +77,6 @@
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
-
 /* переключение тем */
 .header__theme-menu {
   justify-self: end;
@@ -82,19 +85,16 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
   margin: 0;
   list-style: none;
-
 }
 
 .header__theme-menu-button {
   font-family: var(--main-font);
-  font-size: var(--main-text-size);
   text-transform: lowercase;
-  padding: 2px 13px 4px;
+  padding: 0 13px;
   height: 26px;
-  line-height: 1;
   background-color: var(--button-bg-color);
   color: var(--accent-color);
   border: none;
@@ -116,62 +116,81 @@
   margin: 0;
 }
 
-/* Параграф шапки */
-.header__paragraph {
-  justify-self: flex-start;
-  min-width: 355px;
-  line-height: 130%;
-  min-height: 117px;
-  font-family: var(--main-font);
-  font-weight: var(--weight-bold);
-  font-size: var(--main-text-size);
-}
-
-.header__paragraph-item {
-  margin: 0;
-}
-
-/* Декорация всех заголовков */
+/* Декоративный фон текста */
 .title-decor {
   color: var(--h2-color);
   background-color: var(--accent-color);
 }
 
-/* Основная секция */
+/* Параграф шапки */
+.header__paragraph {
+  justify-self: flex-start;
+  min-width: 355px;
+  line-height: var(--text-lh);
+  font-family: var(--main-font);
+  font-weight: var(--weight-bold);
+}
+
+/* Обертка для двух секций */
 .content {
   padding: 0 10px;
   font-family: var(--main-font);
 }
 
-.content__title {
-  color: var(--accent-color);
-  font-size: var(--h2-size);
-  line-height: var(--content-txt-lh);
-  margin: 0;
-}
-
-.content__cards-list {
-  width: 355px;
+/* Первая секция */
+.content__info {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  padding: 0;
+  gap: 46px;
 }
 
-.content__info-list {
+/* карточка */
+.card {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0;
 }
 
-.content__description {
-  display: block;
-  margin: 0 0 10px 0;
+/* Заголовок блока */
+.card__title{
+  color: var(--accent-color);
+  font-size: var(--h2-size);
+  line-height: var(--txt-lh);
 }
 
-.content__text {
+/* Список подкарточек */
+.card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+/* Одна подкарточка */
+.card__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*  */
+
+.card__subtitle {
+  font-size: var(--text-size);
+  line-height: var(--txt-lh);
+}
+
+/* Контейнер с двумя заголовками*/
+.card__sub-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card__subtitle_regular {
+  font-weight: var(--weight-regular);
+}
+
+.card__description {
   color: var(--content-txt-color);
-  line-height: var(--content-txt-lh);
-  margin: 0;
+  line-height: var(--txt-lh);
 }
