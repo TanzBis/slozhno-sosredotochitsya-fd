@@ -34,7 +34,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 1px solid var(--decorate-color);
+  border: 1px solid var(--accent-color);
   border-bottom: 0;
   border-left: 0;
   inset-block-start: 10px;
@@ -46,7 +46,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 1px solid var(--decorate-color);
+  border: 1px solid var(--accent-color);
   border-top: 0;
   border-right: 0;
   inset-block-end: 10px;
@@ -92,7 +92,7 @@
   height: 26px;
   border: none;
   padding: 0 13px;
-  color: var(--decorate-color);
+  color: var(--accent-color);
   font-family: var(--main-font);
   text-transform: lowercase;
   background-color: var(--button-bg-color);
@@ -202,7 +202,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   padding: 0 10px;
   font-family: var(--main-font);
 }
@@ -211,7 +211,7 @@
 .content__info {
   display: flex;
   flex-direction: column;
-  gap: 49px;
+  gap: 46px;
 }
 
 /* карточка */
@@ -239,7 +239,7 @@
 .card__item {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 10px;
   inline-size: 100%;
 }
 
@@ -259,7 +259,7 @@
 .card__sub-box {
   display: flex;
   flex-direction: column;
-  gap: 20.4px;
+  gap: 20px;
 }
 
 /* Дополнительный класс с обычным начертанием */
@@ -322,14 +322,6 @@
     display: grid;
     grid-template-columns: 236px 1fr;
     column-gap: 20px;
-  }
-
-  .card__sub-box {
-    gap: 20px;
-  }
-
-  .card__item {
-    gap: 10px;
   }
 
   .card:nth-of-type(2n) {

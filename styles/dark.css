@@ -9,7 +9,6 @@
   --bg-image: url(../images/cover-image-dark.png); /* фоновая картинки */
   --bg-color: #000028; /* цвет фона */
   --accent-color: #ff0070; /* акцентный цвет */
-  --decorate-color: #ff0070; /* декоративный цвет */
   --subtitle-color: #ff0070; /* цвет для заголовка главной */
   --button-bg-color: transparent; /* фон кнопки */
   --button-hover-color: rgba(255, 0, 112, 0.4); /* цвет границы кнопки при наведении */

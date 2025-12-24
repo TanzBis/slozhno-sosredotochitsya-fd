@@ -21,7 +21,6 @@
   --bg-image: url(../images/cover-image-light.png); /* фоновая картинки */
   --bg-color: #FFF1F7; /* цвет фона */
   --accent-color: #FF8DCB; /* акцентный цвет */
-   --decorate-color: #353430; /* декоративный цвет */
   --subtitle-color: #353430; /* цвет для заголовка главной */
   --button-hover-color: rgba(50, 49, 45, 0.4); /* цвет границы кнопки при наведении */
   --h1-color: #FFC2E6; /* цвет заголовка h1*/
