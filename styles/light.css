@@ -30,3 +30,13 @@
   }
 
 } 
+
+.header__rec {
+  display: none;
+}
+
+@media (width >= 1024px) {
+  .footer__title {
+    text-shadow: 2px 2px 0 var(--footer-shawod-color);
+  }
+}
