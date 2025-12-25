@@ -10,6 +10,7 @@
   --bg-color: #000028; /* цвет фона */
   --accent-color: #ff0070; /* акцентный цвет */
   --subtitle-color: #ff0070; /* цвет для заголовка главной */
+  --button-color: #ff0070; /* цвет кнопки */
   --button-bg-color: transparent; /* фон кнопки */
   --button-hover-color: rgba(255, 0, 112, 0.4); /* цвет границы кнопки при наведении */
   --h1-color: #db00ff; /* цвет заголовка h1*/
