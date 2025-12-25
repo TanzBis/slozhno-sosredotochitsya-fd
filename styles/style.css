@@ -94,6 +94,7 @@
   padding: 0 13px;
   color: var(--button-color);
   font-family: var(--main-font);
+  line-height: 18px;
   text-transform: lowercase;
   background-color: var(--button-bg-color);
 }
@@ -201,7 +202,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 49px;
   margin-bottom: 40px;
   padding: 0 10px;
   font-family: var(--main-font);
@@ -211,7 +212,7 @@
 .content__info {
   display: flex;
   flex-direction: column;
-  gap: 46px;
+  gap: 50px;
 }
 
 /* карточка */
@@ -225,14 +226,14 @@
 .card__title {
   color: var(--subtitle-color);
   font-size: var(--h2-size);
-  line-height: var(--txt-lh);
+  line-height: var(--text-lh);
 }
 
 /* Список подкарточек */
 .card__list {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 20px;
 }
 
 /* Одна подкарточка */
@@ -246,20 +247,20 @@
 /* Подзаголовки для подкарточки */
 .card__subtitle {
   font-size: var(--text-size);
-  line-height: var(--txt-lh);
+  line-height: var(--text-lh);
 }
 
 /* Текст подкарточки */
 .card__description {
   color: var(--content-txt-color);
-  line-height: var(--txt-lh);
+  line-height: var(--text-lh);
 }
 
 /* Контейнер с двумя заголовками */
 .card__sub-box {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 19px;
 }
 
 /* Дополнительный класс с обычным начертанием */
@@ -305,13 +306,13 @@
 /* Главный контент для планшета */
 @media (width >= 768px) {
   .content {
-    gap: 79px;
+    gap: 80px;
     margin-bottom: 60px;
     padding: 0 20px;
   }
 
   .content__info {
-    gap: 78px;
+    gap: 80px;
   }
 
   .card__title {
@@ -400,5 +401,3 @@
     font-size: var(--h1-size-desctop);
   }
 }
-
-
