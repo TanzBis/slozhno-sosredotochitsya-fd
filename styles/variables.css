@@ -5,27 +5,24 @@
   --accent-color: #ff0070; /* акцентный цвет */
   --subtitle-color: #ff0070; /* цвет для заголовка главной */
   --button-color: #ff0070; /* цвет кнопки */
+  --decorate-color: #ff0070; /* декоративный цвет */
   --button-bg-color: transparent; /* фон кнопки */
   --button-hover-color: rgba(255, 0, 112, 0.4); /* цвет границы кнопки при наведении */
-  --h1-color: #db00ff; /* цвет заголовка h1*/
-  --h2-color: #000028; /* цвет заголовка h2 */
+  --title-color: #db00ff; /* цвет заголовка h1*/
+  --main-text-color: #000028; /* цвет заголовка h2 */
   --content-txt-color: #f1b2ce; /* цвет текста в главной секции */
+  --header-rec: flex;
 
   /* Шрифты */
   --main-font: 'IBM Plex Mono', sans-serif; /* основной шрифт */
-  --h1-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* размер шрифта h1 */
-  --h1-lh: 83%; /* line-heght у h1 */
-  --h1-size-desctop: 157px; /* размер шрифта у h1 для декстопа */
-  --h2-size: 18px; /* размер шрифта у h2 */
-  --h3-size: 18px; /* размер шрифта у h3 */
-  --h3-lh: 23.4px; /* line-height у h3 */
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); /* размер шрифта h1 */
+  --title-lh: 83%; /* line-heght у h1 */
+  --title-size-desctop: 157px; /* размер шрифта у h1 для декстопа */
+  --title-size-m: 18px; /* размер шрифта у h2 */
   --text-lh: 23.4px; /* базовый line-height у текстовых элементов */
   --text-size: 18px; /* размер шрифта основного текста */
   --weight-bold: bold; /* жирность шрифта */
   --weight-regular: 400; /* жирность шрифта regular */
-
-  /* Отступы */
-  --page-padding: 10px; /* отступы страницы */
 
   /* Логические свойства и функции */
   --page-padding: 10px; /* отступы страницы */

@@ -9,6 +9,7 @@
   background-attachment: fixed;
   background-color: var(--bg-color);
   font-size: var(--text-size);
+  margin: 0 auto;
 }
 
 /* Мобилка темная тема */
@@ -29,24 +30,25 @@
   position: relative;
 }
 
-.decorated-zone::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border: 1px solid var(--decorate-color);
-  border-bottom: 0;
-  border-left: 0;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
-}
-
+.decorated-zone::before,
 .decorated-zone::after {
   content: "";
   position: absolute;
   width: 25px;
   height: 25px;
   border: 1px solid var(--decorate-color);
+}
+
+/* Индивидуальные стили для верхнего правого уголка */
+.decorated-zone::before {
+  border-bottom: 0;
+  border-left: 0;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+}
+
+/* Индивидуальные стили для нижнего левого уголка */
+.decorated-zone::after {
   border-top: 0;
   border-right: 0;
   inset-block-end: 10px;
@@ -56,11 +58,11 @@
 /* декоративный элемент REC */
 .header__rec {
   position: absolute;
-  display: flex;
+  display: var(--header-rec);
   align-items: center;
   gap: 10px;
   color: var(--decorate-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   font-size: var(--text-size);
   text-transform: uppercase;
   inset-block-start: 10px;
@@ -86,14 +88,15 @@
   flex-direction: column;
   gap: 9px;
   list-style: none;
+  cursor: pointer;
 }
 
 .header__theme-menu-button {
-  height: 26px;
+  min-height: 26px;
   border: none;
   padding: 0 13px;
   color: var(--button-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   line-height: 18px;
   text-transform: lowercase;
   background-color: var(--button-bg-color);
@@ -116,19 +119,23 @@
 }
 
 /* Стили для текста шапки */
+.title {
+  color: var(--title-color);
+  font-family: var(--main-font), sans-serif;
+  font-size: var(--title-size);
+  line-height: var(--title-lh);
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
 .header__title {
   justify-self: flex-start;
   align-self: center;
-  color: var(--h1-color);
-  font-family: var(--main-font);
-  font-size: var(--h1-size);
-  line-height: var(--h1-lh);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 /* Декоративный фон текста */
 .title-decor {
-  color: var(--h2-color);
+  color: var(--main-text-color);
   background-color: var(--accent-color);
 }
 
@@ -136,7 +143,7 @@
 .header__paragraph {
   justify-self: flex-end;
   max-width: 355px;
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   font-weight: var(--weight-bold);
   line-height: var(--text-lh);
 }
@@ -190,7 +197,7 @@
   }
 
   .header__title {
-    font-size: var(--h1-size-desctop);
+    font-size: var(--title-size-desctop);
   }
 
   .header__paragraph {
@@ -202,17 +209,10 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 49px;
+  gap: 50px;
   margin-bottom: 40px;
   padding: 0 10px;
-  font-family: var(--main-font);
-}
-
-/* Первая секция */
-.content__info {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+  font-family: var(--main-font), sans-serif;
 }
 
 /* карточка */
@@ -225,7 +225,7 @@
 /* Заголовок блока */
 .card__title {
   color: var(--subtitle-color);
-  font-size: var(--h2-size);
+  font-size: var(--title-size-m);
   line-height: var(--text-lh);
 }
 
@@ -303,16 +303,16 @@
   block-size: 100%;
 }
 
+.content__gallery .card__title {
+  inline-size: 100%;
+}
+
 /* Главный контент для планшета */
 @media (width >= 768px) {
   .content {
     gap: 80px;
     margin-bottom: 60px;
     padding: 0 20px;
-  }
-
-  .content__info {
-    gap: 80px;
   }
 
   .card__title {
@@ -325,7 +325,7 @@
     column-gap: 20px;
   }
 
-  .card:nth-of-type(2n) {
+  .what {
     display: flex;
     flex-direction: column;
   }
@@ -372,7 +372,7 @@
     inline-size: 315px;
   }
 
-  .card:nth-of-type(2n) .card__list {
+  .what .card__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -388,16 +388,9 @@
   min-height: 668px;
 }
 
-.footer__title {
-  color: var(--h1-color);
-  font-family: var(--main-font);
-  font-size: var(--h1-size);
-  line-height: var(--h1-lh);
-  text-shadow: 2px 2px 0 var(--accent-color);
-}
-
 @media (width >= 1024px) {
   .footer__title {
-    font-size: var(--h1-size-desctop);
+    font-size: var(--title-size-desctop);
+    text-shadow: 2px 2px 0 var(--footer-shadow-color);
   }
 }
