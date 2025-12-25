@@ -18,5 +18,5 @@
   --main-text-color: #000028; /* цвет заголовка h2 */
   --content-txt-color: #f1b2ce; /* цвет текста в главной секции */
   --footer-shadow-color: #ff0070; /* цвет для заголовка подвала */
-  --header-rec: flex; 
+  --header-rec: flex;
 }

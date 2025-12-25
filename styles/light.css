@@ -16,7 +16,7 @@
   --footer-shadow-color: #FF0070; /* цвет тени футера*/
   --main-text-color: #353430; /* цвет заголовка h2 */
   --content-txt-color: #353430; /* цвет текста в главной секции */
-  --header-rec: none; 
+  --header-rec: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,6 +32,6 @@
   --footer-shadow-color: #FF0070; /* цвет тени футера*/
   --main-text-color: #353430; /* цвет заголовка h2 */
   --content-txt-color: #353430; /* цвет текста в главной секции */
-  --header-rec: none; 
+  --header-rec: none;
   }
 }
