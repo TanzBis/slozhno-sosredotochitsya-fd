@@ -23,6 +23,7 @@
   --text-size: 18px; /* размер шрифта основного текста */
   --weight-bold: bold; /* жирность шрифта */
   --weight-regular: 400; /* жирность шрифта regular */
+  --title-decor-size: 18px;
 
   /* Логические свойства и функции */
   --page-padding: 10px; /* отступы страницы */

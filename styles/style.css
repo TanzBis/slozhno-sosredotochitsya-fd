@@ -137,6 +137,7 @@
 .title-decor {
   color: var(--main-text-color);
   background-color: var(--accent-color);
+  font-size: var(--title-decor-size);
 }
 
 /* Параграф шапки */
@@ -222,7 +223,6 @@
   gap: 20px;
 }
 
-/* Заголовок блока */
 .card__title {
   color: var(--subtitle-color);
   font-size: var(--title-size-m);
@@ -244,7 +244,6 @@
   inline-size: 100%;
 }
 
-/* Подзаголовки для подкарточки */
 .card__subtitle {
   font-size: var(--text-size);
   line-height: var(--text-lh);
@@ -301,10 +300,6 @@
   object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
-}
-
-.content__gallery .card__title {
-  inline-size: 100%;
 }
 
 /* Главный контент для планшета */
