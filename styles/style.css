@@ -138,6 +138,7 @@
   color: var(--main-text-color);
   background-color: var(--accent-color);
   font-size: var(--title-decor-size);
+  line-height: var(--text-lh);
 }
 
 /* Параграф шапки */
